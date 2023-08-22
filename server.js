@@ -41,7 +41,7 @@ app.use('/api/users', userRouter);
 app.use('/api/orders', orderRouter);
 
 const __dirname=path.resolve();
-app.use(express.static(path.join(__dirname,'../frantend/build')));
+app.use(express.static(path.join(__dirname,'build')));
 
 
 app.get('*',(req,res) =>
